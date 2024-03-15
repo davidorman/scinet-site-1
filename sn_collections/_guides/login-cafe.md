@@ -32,5 +32,6 @@ In your terminal add the cert to your profile with:
 
 BAHHH user needs a kerb ticket now and they may not know thier password.
 HARD STOP
+Have them login to OOD and then they can access IPA via the website?
 
 
