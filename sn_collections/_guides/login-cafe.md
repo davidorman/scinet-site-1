@@ -28,10 +28,8 @@ will work fine among many aother methods.
 
 Now login to ceres or atlas via ssh or OOD terminal.
 
-In your terminal add the cert to your profile with:
+Save your cert as your username.crt in your home directory.
+A system process will pickup the file and add it to your authentication profile.  This happens once an hour at 15 minutes past the hour.
 
-BAHHH user needs a kerb ticket now and they may not know thier password.
-HARD STOP
-Have them login to OOD and then they can access IPA via the website?
-
+The file will be deleted when the process is finished.  If you wish to keep a copy save another copy with a different name.
 
