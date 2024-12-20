@@ -18,6 +18,8 @@ primary:
     url: /
   - title: About
     links:
+      - title: About SCINet
+        url: /about/
       - title: Sign up for an account
         url: /about/signup
       - title: Computer Systems
@@ -34,7 +36,7 @@ primary:
     links:
       - title: System Downtime
         url: /news/downtime/
-      - title: Announcements
+      - title: "What's New?"
         url: /news/announcements
       - title: User Stories
         url: /news/stories
@@ -52,16 +54,18 @@ primary:
         sublinks: 
           - title: Access
             url: /guides/access
-          - title: Resources
+          - title: Computing Resources
             url: /guides/resources
-          - title: Data
+          - title: Data Management
             url: /guides/data
-          - title: Use
+          - title: Cluster Use
             url: /guides/use
+          - title: Development Environment
+            url: /guides/ide
           - title: Software
             url: /guides/software
-          - title: Analysis
-            url: /guides/analysis
+          - title: Applications
+            url: /guides/application
       - title: Support
         url: /support/contact
         sublinks: 
@@ -79,14 +83,14 @@ primary:
           url: /research/working-groups/ag100pest
         - title: Arthropod Genomics
           url: /research/working-groups/arthropods
+        - title: Breeding AI and ML
+          url: /research/working-groups/breeding
         - title: Geospatial Research
           url: /research/working-groups/geospatial
         - title: Microbiome
           url: /research/working-groups/microbiome
         - title: LTAR Phenology
           url: /research/working-groups/LTARphenology
-        - title: Pollinator
-          url: /research/working-groups/pollinator
         - title: Protein Function and Phenotype Prediction
           url: /research/working-groups/proteinfunction
         - title: Translational Omics
@@ -105,9 +109,9 @@ primary:
   - title: Trainings and Events
     links:
       - title: Learning Resources
-        url: /training/resources
+        url: /training
       - title: Upcoming Events
-        url: /training/events/
+        url: /events
       - title: Learning Pathway
         url: /training/learningpath
       - title: Request Trainings
@@ -132,8 +136,10 @@ primary:
         url: /opportunities/fellowships
       - title: AI Innovation Fund
         url: /opportunities/ai-innovation/
-      - title: SCINet and AI-COE fellowship proposals
-        url: /opportunities/scinet-aicoe-fellowships
+      - title: Postdoctoral Fellowship Mentor Proposals
+        url: /opportunities/fellowship-mentors
+      - title: Graduate Student Internship Mentor Applications
+        url: /opportunities/internship-mentors
 #      - title: Open Positions
 #        url: /opportunities/open_positions
 

@@ -84,9 +84,11 @@ If you have questions, please email the VRSC: scinet_vrsc@usda.gov
 ### How do I reset or change my password?
 If your password is expired you should be prompted to change your password when you attempt to login. If you are still able to login, do so and type "passwd" you will be prompted for your old password and asked for a new one.
 
-[Read more about logging in to SCINet and changing your password here]({{ site.baseurl }}/guides/access/login).
+[Read more about logging in to SCINet and changing your password here]({{ site.baseurl }}/guides/access).
 
 [Watch a video demonstration of changing your password here](https://www.youtube.com/watch?v=Amhw2k5mftI).
+
+[Watch a video demonstration of channging your password using LincPass and OOD here](https://youtu.be/tx3sQX7rl70)
 ```
 [first.last@ceres-login ~] $ passwd
 Changing password for user first.last
@@ -105,8 +107,9 @@ If you have forgotten your login password, please email the VRSC: scinet_vrsc@us
 1. AT LEAST 14 characters long
 2. Your last 24 passwords cannot be reused.
 
-### How do I login to Ceres?
-Command line access is available via Secure Shell (SSH) and Virtual Private Network (VPN). For more info, see the [Quick Start Guide]({{ site.baseurl }}/guides/start).
+### How do I login to SCINet?
+We offer web-based access to SCINet (Open OnDemand and Galaxy) and command-line access via SSH. See our [login guide](/guides/access) for more information.
+
 
 ### I took my onboarding a long time ago, how do I get a refresher course?
 Email the VRSC scinet_vrsc@usda.gov for a time and day. You can also read the [Quick Start Guide]({{ site.baseurl }}/guides/start) or [Ceres User Guide]({{ site.baseurl }}/guides/resources/ceres).
@@ -123,7 +126,7 @@ For new software requests, go to the [Request Software page]({{ site.baseurl }}/
 ### How do I install my own software programs?
 You may install your own software in your own directories, however, we strongly encourage users to contact the VRSC team to ensure that their required tool(s) might not be better distributed as a shared package within the official software modules tree.
 
-The popular R, Perl and Python languages have many packages/modules available. Some of the programming-language-specific packages are installed on Ceres and are available with the r/perl/python_2/python_3 modules. See the list of installed packages on the [Software Overview page]({{ site.baseurl }}/guides/software/preinstalled) or use “module avail” at the command line. To see more information on a specific module, issue the "module help <module_name>" command. Also see the [Installing R/Python/Perl Packages guide]({{ site.baseurl }}/guides/analysis/r-perl-python).
+The popular R, Perl and Python languages have many packages/modules available. Some of the programming-language-specific packages are installed on Ceres and are available with the r/perl/python_2/python_3 modules. See the list of installed packages on the [Software Overview page]({{ site.baseurl }}/guides/software/preinstalled) or use “module avail” at the command line. To see more information on a specific module, issue the "module help <module_name>" command. Also see the [Installing R/Python/Perl Packages guide]({{ site.baseurl }}/guides/software/r-perl-python).
 
 Another resource for installing your own software programs is the Conda package manager. See the [User-Installed Software on Ceres Using Conda guide]({{ site.baseurl }}/guides/software/conda)
 
@@ -223,6 +226,7 @@ The table below summarizes the relevant GNU compiler names and command line flag
 ### My terminal window keeps freezing. Is there something I can do to stop this?
 As a result of the current networking infrastructure, working at the command line can be difficult sometimes because displaying hundreds of lines freezes the display. The solution to this is to enable SSH compression. There are a few different ways to do ssh using compression: do  ```ssh -C```  from the command line; or instead of ssh in Putty, click on SSH on the left, then check Enable Compression In Unix; or alter your ~/.ssh/config file to contain these lines:
 
+{:.copy-code}
 ```
 Host ceres.scinet.usda.gov  
 Compression yes
@@ -231,6 +235,7 @@ Compression yes
 ### I log in at the command line but the system keeps logging me out. Is there something I can do to stop this?
 On Linux or Mac OS just create or add the following to a ~/.ssh/config file. If you use Windows Powershell to login to Ceres the config file will be located at C:/Users/username/.ssh/config.
 
+{:.copy-code}
 ```
 Host ceres
 HostName ceres.scinet.usda.gov
@@ -245,6 +250,7 @@ That will send a "keepalive" signal every 20 seconds and keep retrying for up to
 
 If you don't want to use the config file method you can just add these options to the ssh command:
 
+{:.copy-code}
 ```
 ssh -o TCPKeepAlive=yes -o ServerAliveInterval=20 -o ServerAliveCountMax=30 @ceres.scinet.usda.gov -XA
 ```

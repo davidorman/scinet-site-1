@@ -4,6 +4,7 @@ title: "Omics Webinar"
 # author: 
 type: event
 tags: omics
+description: Reoccuring Translational Omics Working Group webinars and presentations
 provider: Omics Working Group
 registration: 
   text: "Join the Working Group"
@@ -11,22 +12,84 @@ registration:
 cal-titles: excerpt
 maincalendar: true
 
+excerpt: To recieve an invitation to upcoming webinars, fill out the [Translational Omics Working Group registration survey](https://forms.office.com/g/tgh4SxRqit).
+
 #filter-archive: materials
 
 archive-label: Webinar Recordings
 
 sessions:
+  - session: 
+    title: "Comparative analysis of adaptive immune systems in agriculturally important species"
+    date: 2024-12-12
+    time: 11am-12pm ET
+    presenter: Dr. Yana Safonova
+    materials:
+      - text: webinar recording
+        url: https://usdagcc-my.sharepoint.com/:v:/r/personal/george_liu_usda_gov/Documents/publication/Hu%20Zhenbin/TOmics%20WG/20241212Recording/GMT20241212-163058_Recording_2240x1260.mp4?csf=1&web=1
   - session:
-    excerpt: Advancing omics measurement science to support agricultural research
+    title: "Harnessing Transposons for Precise and Efficient Genome Editing in Plants"
+    date: 2024-11-14
+    time: 11am-12pm ET
+    presenter: Dr. Peng Liu
+    materials: 
+      - text: webinar recording
+        url: https://usdagcc-my.sharepoint.com/:v:/r/personal/george_liu_usda_gov/Documents/publication/Hu%20Zhenbin/TOmics%20WG/20241114Recording/GMT20241114-160115_Recording_1920x1200.mp4?csf=1&web=1
+  - session:
+    title: "The genomic and metabolic making of yeast ecological diversity"
+    date: 2024-10-10 11:00:00
+    time: 11am-12pm ET
+    presenter: "Dr. Chris Todd Hittinger"
+    materials:
+      - text: webinar recording
+        url: https://usdagcc-my.sharepoint.com/:v:/r/personal/george_liu_usda_gov/Documents/publication/Hu%20Zhenbin/TOmics%20WG/20241010Recording/GMT20241010-150128_Recording_1920x1080.mp4?csf=1&web=1
+  - session:
+    title: "Exploiting microbiota-derived bioactive compounds to enhance animal health and production"
+    date: 2024-09-12
+    time: 11am-12pm ET
+    presenter: "Dr. Hilario Mantovani"
+    materials:
+      - text: webinar recording
+        url: https://usdagcc-my.sharepoint.com/:v:/r/personal/george_liu_usda_gov/Documents/publication/Hu%20Zhenbin/TOmics%20WG/20240912Recording/GMT20240912-150120_Recording_1920x1080.mp4?csf=1&web=1
+#  - session:
+#    title: "The genomic and metabolic making of yeast ecological diversity"
+#    date: 2024-08-08
+#    time: 11am-12pm ET
+#    presenter: "Dr. Chris Todd Hittinger"
+  - session:
+    title: "Untangling False Positives, Statistical Power, Populations Structure, and Kinship in GWAS"
+    date: 2024-07-11
+    time: 11am-12pm ET
+    presenter: "Dr. Zhiwu Zhang"
+    materials:
+      - text: webinar recording
+        url: https://usdagcc-my.sharepoint.com/:v:/r/personal/george_liu_usda_gov/Documents/publication/Hu%20Zhenbin/TOmics%20WG/20240711Recording/GMT20240711-150107_Recording_1920x1200.mp4?csf=1&web=1
+  - session:
+    title: Livestock, Companion Animals, and Wildlife; Working Across Industries in Genomics Research
+    date: 2024-06-13
+    time: 11am-12pm ET
+    presenter: "Heather J. Huson, Ph.D."
+    materials:
+      - text: webinar recording
+        url: https://usdagcc-my.sharepoint.com/:v:/r/personal/george_liu_usda_gov/Documents/publication/Hu%20Zhenbin/TOmics%20WG/20240611Recording/GMT20240613-151526_Recording_1920x1200.mp4?csf=1&web=1
+  - session:
+    title: "Streamline unsupervised machine learning to survey and graph indel-based haplotypes from pan-genomes"
+    date: 2024-05-09
+    time: 11am-12pm EDT
+    presenter: "Dr. Xianran Li"
+    materials:
+      - text: webinar recording
+        url: https://usdagcc-my.sharepoint.com/:v:/r/personal/george_liu_usda_gov/Documents/publication/Hu%20Zhenbin/TOmics%20WG/20240509Recording/GMT20240509-145951_Recording_2560x1440.mp4?csf=1&web=1
+  - session:
+    title: Advancing omics measurement science to support agricultural research
     date: 2024-03-21
     time: 11am-12pm EDT
     presenter: "Dr. Tracy B, Shock"
+    materials:
+      - text: Webinar recording
+        url: https://usdagcc-my.sharepoint.com/:v:/r/personal/george_liu_usda_gov/Documents/publication/Hu%20Zhenbin/TOmics%20WG/20240321Recording/GMT20240321-145942_Recording_1920x1080.mp4?csf=1&web=1
   - session:
-    excerpt: "Mammalian Immunome Project: A large-scale comparative study of mammalian adaptive immune system"
-    presenter: "Dr. Yana Safonova"
-    date: 2024-04-11
-  - session:
-    excerpt: Statistical and computational methods for spatial transcriptomics data analysis
+    title: Statistical and computational methods for spatial transcriptomics data analysis
     date: 2024-02-08
     #tags: statistics
     presenter: "Dr. Ying Ma"
@@ -34,14 +97,14 @@ sessions:
       - text: Webinar recording
         url: https://usdagcc-my.sharepoint.com/:v:/r/personal/zhenbin_hu_usda_gov/Documents/Yingma_2.8.2024/GMT20240208-155809_Recording_1920x1080.mp4?csf=1&web=1
   - session:
-    excerpt: Evolutionary dynamics of transposable elements in plant genomes
+    title: Evolutionary dynamics of transposable elements in plant genomes
     date: 2023-12-14
     presenter: "Dr. Shujun Ou"
     materials:
       - text: Webinar recording
         url: https://usdagcc-my.sharepoint.com/:v:/r/personal/zhenbin_hu_usda_gov/Documents/Working_group12142023/GMT20231214-160001_Recording_1920x1200.mp4?csf=1&web=1
   - session:
-    excerpt:  Using multiomics to explore the impact of drought on the root microbiome
+    title:  Using multiomics to explore the impact of drought on the root microbiome
     date: 2023-11-11
     presenter: "Dr. Devin Coleman-Derr"
     materials:
@@ -57,21 +120,24 @@ sessions:
 
   - session:
     exclude: true
-    excerpt: October Meeting
+    title: "Farm Animal Genotype-Tissue Expression (FarmGTEx)"
     date: 2023-10-12
+    presenter: "Dr. Lingzhao Fang"
     materials: 
       - text: Meeting recording
         url: https://usdagcc-my.sharepoint.com/personal/zhenbin_hu_usda_gov/_layouts/15/stream.aspx?id=%2Fpersonal%2Fzhenbin_hu_usda_gov%2FDocuments%2FGMT20231012-145931_Recording_1920x1200%2Emp4
   - session:
     exclude: true
-    excerpt: Initial Organization Meeting
+    title: Initial Organization Meeting
     date: 2023-09-14
     materials:  
       - text: Presentation slides
         url: https://usdagcc-my.sharepoint.com/:p:/g/personal/zhenbin_hu_usda_gov/EY5hplNYaDZAkG4fapkIarAB21t6wlyBXm0djmC65_zLwQ
+
+
 ---
 
-To recieve an invitation to upcoming webinars, fill out the [Translational Omics Working Group registration survey](https://forms.office.com/g/tgh4SxRqit). <!--excerpt-->
+To recieve an invitation to upcoming webinars, fill out the [Translational Omics Working Group registration survey](https://forms.office.com/g/tgh4SxRqit).
 
 The primary goal of the [Translational Omics Working Group](/research/working-groups/omics) is to foster collaboration, knowledge-sharing, and innovation among researchers and experts in diverse fields, including but not limited to genomics, bioinformatics, computational biology, and artificial intelligence (AI).
 

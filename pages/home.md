@@ -2,12 +2,14 @@
 title: SCINet Home
 permalink: /
 type: future
+description: SCINet is a USDA initiative to provide agricultural scientists access to high performance computing, networking and training.
 
 # alerts:
-#  - alert:
-#    title: Ceres Maintenance
-#    type: info
-#    text: Ceres cluster maintenance is scheduled for the week of June 19, to update system software. The cluster will be down for several days. </br> The Atlas cluster will remain up and running during # Ceres downtime. </br> See <a href="https://forum.scinet.usda.gov/t/ceres-maintenance-the-week-of-june-19-20923/1053">the SCINet Forum Announcements page</a> for more information.
+#   - alert:
+#     title: Ceres Update
+#     type: success
+#     title: Ceres maintenance completed
+#     text: Ceres' new storage system is now fully deployed and available for use!  <a href="/announcements/2024-10-16-ceres" class="usa-link">Read more about these updates here.</a>
 
 layout: scinet_home
 
@@ -24,9 +26,12 @@ hero:
     text: "High-Performance Computing. </br> 
     Training. </br>
     High-Speed Networking."
-  button:
-    url: /about/compute
-    text: Learn More
+  buttons:
+    - url: /about/
+      text: Learn More
+    - url: /guides/access
+      text: Access SCINet
+      color: secondary
 
 
 intro:
@@ -42,7 +47,7 @@ intro:
 calendar:
   title: "Upcoming Trainings and Events"
   button: "See the Full Calendar"
-  url: /training/events
+  url: /events
 
 maincalendar: true
 
@@ -55,7 +60,7 @@ alt_calendar:
     - title: "View available online training resources"
       url: training/free-online-training
     - title: "Take a look at events we have hosted in the past"
-      url: /training/events/archive
+      url: /events/archive
 
 no-tags: true
 

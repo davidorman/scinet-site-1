@@ -3,19 +3,60 @@ layout: default
 main:
   class: usa-layout-docs usa-layout-docs__main usa-prose 
 ---
-
+{% assign blankarray = "" | split: "" %}
+{% assign bc_sidenav = blankarray %}
 
 <div class="grid-container main-side">
 
-
+{% if page.sidenav_basic %}  
+  {% assign sidenav = page.sidenav_basic %}
+  {% assign bc_sidenav = sidenav %}
+  {% if page.alt_nav %}
+  {% assign alt_nav = page.alt_nav %}
+  {% else %}
+  {% assign firstnav = sidenav | first %}
+  {% assign alt_nav = firstnav.title %}
+  {% endif %}
+{% else %}
   {% if page.sidenav_link %}
     {% assign pagelink = page.sidenav_link %}
   {% else %}
     {% assign pagelink = page.permalink %}
   {% endif %}
+  {% if page.alt_nav %}
+  {% assign alt_nav = page.alt_nav %}
+  {% else %}
+  {% assign alt_nav = false %}
+  {% endif %}
 
 
   {% if page.layout_type == 'workshop' %}
+    {% if page.parent %}
+    {% assign bc_sectionlink = page.parent %}
+    {% if page.parent.class %}
+    {% assign bc_sidenav = bc_sidenav | push: page.parent %}
+    {% else %}
+    {% include collect/process/hashed title=page.parent.title url=page.parent.url class="guide-nav" %}
+    {% assign bc_sidenav = bc_sidenav | push: hashed %}
+    {% endif %}
+
+
+    {% assign altnav = page.parent.title %}
+    {% assign mixedevents = site.events | concat: site.events-recurring %}
+    {% assign sorter = mixedevents | find_exp: "post", "post.title == altnav" %}
+    {% assign myset = site.workshops | where_exp: "post", "post.categories == page.categories" %}
+
+    {% if sorter.course-list %}
+    {% for _course in sorter.course-list %}
+    {% assign fetch = myset | find_exp: "item", "item.title == _course.title" %}
+    {% assign bc_sidenav = bc_sidenav | push: fetch %}
+    {% endfor %}
+    {% else %}
+    {% assign bc_sidenav = bc_sidenav | concat: myset %}
+    {% endif %}
+
+    {% else %}
+
 
     {% assign alt_nav = "Workshop" %}
 
@@ -26,6 +67,8 @@ main:
     {% assign myset = all_posts | where_exp: "post", "post.categories == page.categories" %}
 
     {% assign bc_sidenav = myset %}
+
+  {% endif %}
   
   {% else %}
     {% assign header = site.data.header %}
@@ -70,10 +113,12 @@ main:
 
   {% if page.layout_type == 'guides' %}
 
-    {% assign alt_nav = page.categories %}
+    {% assign alt_nav = page.categories | default: 'guides' %}
 
-    {% assign guidecategories = site.guidecategory %}
-    {% assign guidepages = site.guides %}
+    {% if page.categories != empty %}
+    
+    {% assign guidecategories = site.guides | where: "sorting", "index" %}
+    {% assign guidepages = site.guides | where: "sorting", "guide" %}
 
     {% if page.sorted or page.order_number %}
       {% assign guidepages = guidepages | sort: 'order_number' %}
@@ -89,6 +134,12 @@ main:
       {% assign bc_sidenav = breadcrumb_set %}
     {% endif %}
 
+    {% elsif page.parent %}
+      {% assign bc_sectionlink = page.parent %}
+      
+      {% assign bc_sidenav = bc_sidenav | push: page.parent | push: page %}
+    {% endif %}
+
   {% endif %}
 
 {% if page.sidenav_other %}
@@ -97,19 +148,22 @@ main:
     {% assign sidenav = bc_sidenav %}
 {% endif %}
 
+{% endif %}
+
 {% if page.sidenav_append %}
   {% assign sidenav = sidenav | concat: page.sidenav_append %}
 {% endif %}
 
 
 
+
 <div class="grid-row grid-gap flex-align-start">
     <div class="usa-layout-docs__sidenav desktop:grid-col-3 desktop:padding-y-10{% unless page.sidenav %} usa-sticky-sidenav{% endunless %}">
-        {% include sidenav.html links=sidenav %}
+        {% include layout/sidenav.html links=sidenav %}
     </div>
     
     <div class="usa-layout-docs__main desktop:grid-col-9{% if page.nobreadcrumb %} padding-top-8{% endif %}">
-        {% unless page.nobreadcrumb %}{% include breadcrumb.html %}{% endunless %}
+        {% unless page.nobreadcrumb %}{% include layout/breadcrumb.html %}{% endunless %}
         <main class="{{ layout.main.class }}" id="main-content">
 
         {{ content }}

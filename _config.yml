@@ -3,7 +3,7 @@ description: SCINet is a USDA initiative to provide agricultural scientists acce
 short_name: "SCINet"
 language: "en"
 lang_direction: "ltr"
-timezone: America/New_York
+timezone: '-0500'
 icon: "https://scinet.usda.gov/assets/img/site/favicons/favicon.png"
 
 # GitHub information
@@ -66,20 +66,17 @@ collections:
   events:
     output: true
     future: true
-    permalink: /:collection/:path
+    permalink: /events/:name
   posts:
     output: true
     permalink: /:collection/:path
   workshops:
     output: true
     future: true
-    permalink: /:collection/:path
+    permalink: /events/:slugified_categories/:name
   guides:
     output: true
-    permalink: /guides/:categories/:name
-  guidecategory:
-    output: true
-    permalink: /guides/:categories
+    permalink: /:collection/:path
   tutorials:
     output: true
     permalink: /tutorials/:name
@@ -95,7 +92,8 @@ defaults:
       future: "show"
       layout: "event"
       cal-titles: "hide"
-      sidenav_link: /training/events/
+      sidenav_link: /events
+      duplicate: false
   - 
     scope:
       path: ""
@@ -104,7 +102,7 @@ defaults:
       future: "show"
       layout: "event"
       cal-titles: "hide"
-      sidenav_link: /training/events/
+      sidenav_link: /events
       recurring: true
   -
     scope:
@@ -129,21 +127,10 @@ defaults:
       type: "workshops"
     values:
       future: "show"
-      layout: "page"
+      layout: "event"
       layout_type: "workshop"
-  - 
-    scope:
-      path: ""
-      type: "guidecategory"
-    values:
-      layout: "guides"
-      layout_type: "guides"
-      sidenav_link: /guides/
-      class: "guide-nav"
-      sidenav_append: 
-        - title: SEARCH
-          url: /search
-          class: "sidenav-search"
+      cal-titles: "hide"
+
   - 
     scope:
       path: ""
@@ -152,6 +139,7 @@ defaults:
       layout: "page"
       layout_type: "guides"
       sidenav_link: /guides/
+      sorting: guide
       sidenav_append: 
         - title: SEARCH
           url: /search

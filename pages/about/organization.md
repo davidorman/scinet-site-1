@@ -4,11 +4,10 @@ description: Organization and Management of the SCINet project
 permalink: /about/organization
 author: 'Adam Rivers Kerrie Geil'
 layout: page
+alt_nav: About
 
 
 subnav:
-  - title: About
-    url: '#about-scinet'
   - title: Senior Leadership
     url: '#senior-leadership'
   - title: Executive Committee
@@ -24,46 +23,114 @@ subnav:
   - title: SCINet Software Committee
     url: '#scinet-software-committee'
 
-
+SAC-table:
+  caption: Committee Members
+  flex: true
+  class: usa-table--compact
+  data:
+    - Person: Jeremy Edwards
+      Area: Southeast
+      Role: Chair
+      Subcommittees: Communications
+      Term expires: 2026
+    - Person: Jason Fiedler
+      Area: Plains
+      Role: Vice-Chair
+      Subcommittees: Planning
+      Term expires: 2026
+    - Person: Adrienne Narrowe
+      Area: Northeast
+      Role: Representative
+      Subcommittees: TBD
+      Term expires: 2027
+    - Person: Harlan Svoboda
+      Area: Northeast
+      Role: Representative
+      Subcommittees: TBD
+      Term expires: 2027
+    - Person: Geoff Waldbieser
+      Area: Southeast
+      Role: Representative
+      Subcommittees: TBD
+      Term expires: 2026
+    - Person: Margaret Woodhouse
+      Area: Midwest
+      Role: Secretary
+      Subcommittees: Communications
+      Term expires: 2026
+    - Person: Hye-Seon Kim
+      Area: Midwest
+      Role: Representative
+      Subcommittees:  
+      Term expires: 2025
+    - Person: Erin Scully
+      Area: Plains
+      Role: Representative
+      Subcommittees: Education, Membership
+      Term expires: 2025
+    - Person: Pat Clark
+      Area: Pacific West
+      Role: Representative
+      Subcommittees: Education
+      Term expires: 2025
+    - Person: Peter Olsoy
+      Area: Pacific West
+      Role: Representative
+      Subcommittees: TBD
+      Term expires: 2027
+    - Person: Quentin Read
+      Area: Statistician
+      Role: Representative
+      Subcommittees: TBD
+      Term expires: 2027
+    - Person: Christopher Owen
+      Area: At-Large
+      Role: Representative
+      Subcommittees: TBD
+      Term expires: 2025
+    - Person: Brian Stucky
+      Area: A-CSIO
+      Role: Ex Officio
+      Subcommittees: ""
+      Term expires: ""
+    - Person: Cyndy Parr
+      Area: NAL
+      Role: Ex Officio
+      Subcommittees: ""
+      Term expires: ""
+    - Person: Marlen Eve
+      Area: ONP
+      Role: Ex Officio
+      Subcommittees: ""
+      Term expires: ""
+    - Person: Jack Okamuro
+      Area: ONP
+      Role: Ex Officio
+      Subcommittees: ""
+      Term expires: ""
+    - Person: Bryan Kaphammer
+      Area: AO
+      Role: Ex Officio
+      Subcommittees: ""
+      Term expires: ""
+    - Person: Rob Butler
+      Area: SCINet Program Manager
+      Role: Ex Officio
+      Subcommittees: ""
+      Term expires: ""
+    - Person: Brian Scheffler
+      Area: Former CSIO
+      Role: Ex Officio
+      Subcommittees: ""
+      Term expires: ""
+    - Person: Jay Joiner
+      Area: SCINet Admin Support
+      Role: Ex Officio
+      Subcommittees: ""
+      Term expires: ""
 ---
 
-
-## About SCINet
-The SCINet initiative is an effort by the USDA Agricultural Research Service to improve the USDA’s research capacity by providing scientists with access to high-performance computing (HPC) clusters, high-speed networking for data transfer, and training in scientific computing.
-
-SCINet supports a growing community of nearly 2,000 USDA research scientists and university partners to accelerate agricultural discovery through advanced computational infrastructure and scientific computing. 
-
-Current uses of SCINet span multiple disciplines, including genomics, plant breeding, hydrology, crop production, plant and animal disease modeling, and natural resource management. SCINet users include ARS and other federal scientists, as well as partners external to the federal government.
-
-SCINet supports a broad range of computational tools, including R (and RStudio), Python (and Jupyter notebooks), and software for bioinformatics, geospatial analyses, machine learning and deep learning, and image processing.
-
-<div class="grid-row grid-gap">
-<div class="desktop:grid-col-auto">
-<h3>Training and Support</h3>
-<ul>
-  <li>​Computational skills​</li>
-  <li>Data management​</li>
-  <li>Scientific algorithms for HPC​</li>
-  <li>Computational workflow design</li>
-  <li>Software installation and support​</li>
-  <li>AI and machine learning</li>
-</ul>
-</div>
-<div class="desktop:grid-col">
-<h3>Computing Resources</h3>
-<ul>
-  <li>2 High-Performance Computing Clusters
-    <ul>
-      <li>320 Standard Compute Nodes</li>
-      <li>41 High-Memory Compute Nodes</li>
-      <li>9 GPU Nodes (more on the way)</li>
-    </ul>
-  </li>
-</ul>
-</div>
-</div>
-
-The ARS Scientific Computing Initiative is led by an Executive Committee comprised of ARS leadership including Dr. Jeff Silverstein – Acting Associate Administrator for National Programs,  Dr. Brian Stucky – Acting Chief Scientific Information Officer, Rob Butler – Acting SCINet Project Manager, ARS scientists representing IT and security, and users of the HPC systems. SCINet committees report to the Executive Committee, including the Scientific Advisory Committee (SAC), an HPC Policy Committee, and an HPC Software Committee.
+The ARS Scientific Computing Initiative is led by an Executive Committee comprised of ARS leadership including Dr. Jeff Silverstein – Associate Administrator for National Programs,  Dr. Brian Stucky – Acting Chief Scientific Information Officer, Rob Butler – Acting SCINet Project Manager, ARS scientists representing IT and security, and users of the HPC systems. SCINet committees report to the Executive Committee, including the Scientific Advisory Committee (SAC), an HPC Policy Committee, and an HPC Software Committee.
 
 The program runs two high performance computer clusters and a storage unit.  The Ceres cluster is housed at the National Animal Disease Center in Ames, IA and operated by Iowa State University. The Atlas cluster is located and ran by Mississippi State University in Starkville, MS, and the Juno storage unit is located at the National Agricultural Library in Beltsville, MD. 
 
@@ -74,7 +141,7 @@ User support at SCINet is provided by the  Virtual Support Research Core (VSRC) 
 {: .usa-table .usa-table--compact }
 Person | Position
 ---|---
-Dr. Jeff Silverstein | Acting Associate Administrator for National Programs
+Dr. Jeff Silverstein | Associate Administrator for National Programs
 Dr. Brian Stucky | Acting Chief Scientific Information Officer, ARS
 
 ## Executive Committee
@@ -84,7 +151,7 @@ The ARS Scientific Computing Initiative is led by an Executive Committee.
 {: .usa-table .usa-table--compact }
 Person | Position
 ---|---
-Dr. Jeff Silverstein | Acting Associate Administrator for National Programs
+Dr. Jeff Silverstein | Associate Administrator for National Programs
 Dr. Brian Stucky | Acting Chief Scientific Information Officer, ARS
 Ms. Lorna Drennen | Assistant Chief Information officer
 Mr. Stan Kosecki | Deputy Assistant Chief Information Officer
@@ -99,49 +166,24 @@ Dr. Brian Scheffler | Former Acting Chief Scientific Information Officer
 
 ## SCINet Office
 
+{: .usa-table .usa-table--compact }
 Person | Position
 ---|---
 Brian Stucky | SCINet Computational Biologist and acting CSIO
 Heather Savoy | SCINet Computational Biologist
 Haitao Huang | SCINet Computational Biologist
-Ryan Lucas | SCINet Data Science Coordinator
+Lavida Rogers | SCINet Training Coordinator
 Moe Richert | SCINet Web Developer
 
 ## Scientific Advisory Committee
 
 The ARS Scientific Computing Initiative is in the domain of ARS researchers, thus the program is in a constant state of gathering information to meet users’ needs. The SAC is an effort to assure that users have input on the ARS HPC-storage system. Scientific Advisory Committee (SAC) members represent a broad range of scientific research at ARS, and membership includes two researchers from each of the five ARS geographic areas, a statistician, and an “at-large” member. The SAC divides its work over various subcommittees: communications, education, planning, and membership. In recent years, the SAC has assisted with a quarterly SCINet newsletter, designed a user needs survey, created the scinet.usda.gov website, and held multiple computational workshops and trainings. SAC progress and issues are elevated to the Executive Committee for review and approval. For more information, including how to participate (non-members welcome), please contact Adam Rivers (Chair).
 
-<div class="usa-table-container--scrollable" tabindex="0" markdown="block">
-
-{: .usa-table .usa-table--compact }
-Person | Area |Role | Sub-subcommittees | Term expires
--------|------|-----|-------------------|-------------
-Adam Rivers | Southeast | Chair | Communications | 2023
-Steve Schroeder | Northeast | Vice-Chair | Planning, Software | 2024
-Erin Scully |Plains | Secretary | Education, Membership | 2025
-Jeremy Edwards | Southeast | Representative | Communications | 2023
-Feng Guo | Northeast | Representative | Planning | 2024
-Hye-Seon Kim | Midwest | Representative | | 2025
-Margaret Woodhouse | Midwest | Representative | Communications | 2023
-Jason Fiedler | Plains | Representative | Planning | 2023
-Pat Clark | Pacific West | Representative | Education | 2025
-Alison Thompson |Pacific West | Representative | Education | 2024
-Kathy Yeater | Statistician | Representative |Membership | 2024
-Chris Owen | At-Large | Representative | TBD | 2025
-Jack Okamoro | ONP | Ex Officio | - | -
-Cyndy Parr | NAL | Ex Officio | - | -
-Bryan Kaphammer | Area Directors | Ex Officio | - | -
-Brian Stucky | Acting CSIO | Ex Officio | - | -
-Brian Scheffler | Former CSIO | Ex Officio | - | -
-Rob Butler | Acting SCINet<br>Executive Director | Ex Officio | - | -
-
-</div>
+{% include table.html local='SAC-table' %}
 
 ## Scientific Points of Contact
 
-The Scientific Point of Contact (SPOC) is the Scientific Computing Infrastructure Network (SCINet) champion for the location. Working with the SCINet Operations Team, the Scientific Advisory Committee (SAC) and the SAC subcommittees to ensure location personnel are familiar with SCINet and the services that are offered, the SPOC should be familiar with the scientific needs of the unit(s) at their location, especially with respect to complex data and computational needs. When the SCINet Operations Team needs information about the science requirements and needs at a location, they will contact the SPOC who is expected to interact with other scientists within the location to provide the information and recommendations to the requesting party.
-
-The list of SPOC can be found on the [USDA Sharepoint Site](https://usdagcc.sharepoint.com/:x:/r/sites/REE-ARS-SCINet-Scientific-Advisory-Committee/Shared%20Documents/Membership/SPOC_SCINetOrg_23Sept2021.xlsx?d=w7df900cb464e4864aa4a514b3abdbb2b&csf=1&web=1&e=ilTRb2).
+A SCINet Scientific Point of Contact (SPOC) is the SCINet champion for a location who works with the SCINet Scientific Advisory Committee (SAC) to ensure that location personnel are familiar with SCINet resources and services. SPOCs should be familiar with the scientific computing needs of the unit(s) at their location so that they can help keep the SAC and SCINet Office informed of those needs.
 
 ## SCINet Policy Committee
 
@@ -170,7 +212,7 @@ Rob Butler | Acting SCINet Project Manager
 
 The software committee evaluates requests by users to add or delete software to/from one of the HPCs. This committee is composed of scientific experts in the use of HPCs from across agricultural disciplines, and that represent our two HPCs. Users can make software requests by completing the [Software Request Form]({{ site.baseurl }}/support/request#software-request). 
 
-
+{% comment %}
 <!---------------------------------------------------------------------------------------
 WAITING FOR A FEW DEVELOPMENTS IN THE SCINET PROGRAM TO OCCUR, THEN NEED TO EDIT THE title BELOW AND REPLACE THE INFORMATION ON THIS PAGE ENTIRELY
 ## Executive Committee
@@ -215,3 +257,4 @@ Steven Schroeder
 #Scientific Points of Contact (SPOCs)
 Each ARS location also has at least one designated point of contact for the ARS Scientific Computing Initiative. These representatives are occasionally contacted by the various committees when information from many locations is required for decision making. For more information, including how to participate, please contact Stan Kosecki.
 -->
+{% endcomment %}

@@ -36,7 +36,7 @@
     {% endif %}
     <div class="usa-collection__body">
         <h3 class="usa-collection__heading">
-            {% if page.layout=='event' %}
+            {% if page.layout=='event' and page.type !='workshop' %}
             {{ post.date | date_to_string }} &middot {% if post.provider %}{{ post.provider }} &middot {% endif %}{{ post.title }}
             {% else %}
             {% if post.url %}<a class="usa-link" href="{% if post.external or all_external == 'true' %}{{ post.url }}{% else %}{{ post.url | relative_url}}{% endif %}">{% endif %}
@@ -57,9 +57,9 @@
         </h3>
         {% unless page.type == 'itinerary' %}
         {% if post.excerpt %}
-        <p class="usa-collection__description">
-            {{ post.excerpt }}
-        </p>
+        <div class="usa-collection__description">
+            {{ post.excerpt | markdownify }}
+        </div>
         {% endif %}
         {% endunless %}
         <ul class="usa-collection__meta" aria-label="More information">
@@ -69,13 +69,13 @@
                 <b>{% if session.date %}{{ session.date | date: "%A, %B %-d"}}{% else %}{{ post.date | date: "%A, %B %-d"}}{% endif %}{% if session.time %}, {{ session.time }} {% endif %}</b>
                 <ul class="unstyled-list">
                     {% unless page.type == "archive" %}
-                    {% if session.register %} <li><b>Registration: </b>
+                    {% if session.registration%} <li><b>Registration: </b>
                         {% if session.register_url %}
                         <a href="{{ session.register_url }}">
-                            {{ session.register }}
+                            {{ session.registration}}
                         </a>
                         {% else %}
-                        {{ session.register }}
+                        {{ session.registration }}
                         {% endif %}
                     </li>
                     {% endif %}

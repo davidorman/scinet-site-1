@@ -1,6 +1,6 @@
 ---
 title: SCINet Learning Pathway
-description: With the expansive list of free training available online, finding the right training to meet your learning needs can be daunting.
+description: Find the right training to meet your learning needs
 permalink: /training/learningpath
 layout: guides
 
@@ -20,10 +20,10 @@ subnav:
         url: /guides/start
         internal: true 
       - title: Intro to SCINet - Video
-        url: https://web.microsoftstream.com/video/9a2b95a3-79e6-4176-b5e6-cfd674c034aa
+        url: https://usdagcc.sharepoint.com/:v:/r/sites/OCIO-CEC-orphan-videos/Shared%20Documents/OCIO-General/Stream%20Migrated%20Videos/Orphan%20Videos%2074/Intro_to_SCINet%2010.28.21-20211101_034105.mp4?csf=1&web=1&e=YJq7Gm&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
         class: usa-link--external
       - title: SCINet Onboarding - Video
-        url: https://web.microsoftstream.com/video/bed89bf6-99fc-44f0-9f4a-3e16cd2f2d49
+        url: https://usdagcc.sharepoint.com/:v:/r/sites/OCIO-CEC-orphan-videos/Shared%20Documents/OCIO-General/Stream%20Migrated%20Videos/Orphan%20Videos%2074/Introduction%20to%20Atlas%2008.26.21-20211105_011340.mp4?csf=1&web=1&e=c9fkcH&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
         class: usa-link--external
       - title: Intro to Atlas
         url: /events/intro-to-atlas
@@ -47,7 +47,7 @@ subnav:
         url: /training/free-online-training
         internal: true
       - title: Event Calendar
-        url: /training/events
+        url: /events
         internal: true
       - title: Carpentries (UNIX, GIT, Python, R, OpenRefine, SQL)
         url: /training/carpentries

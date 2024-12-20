@@ -1,10 +1,10 @@
 ---
 title: SCINet Pollinator Working Group
-description: summary of the working group
+description: The SCINet Pollinator working group was initiated in February 2021 with a goal of promoting coordinated, computational research on managed and native pollinators.
 permalink: /research/working-groups/pollinator
 author: Melanie Kammerer
 layout: page
-
+published: false
 subnav:
   - title: Workshops
     url: '#workshops'
